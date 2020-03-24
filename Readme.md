@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Пушкарева](https://up.htmlacademy.ru/adaptive/19/user/1129585).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://up.htmlacademy.ru/htmlcss/27/user/241239).
 
 ---
 
