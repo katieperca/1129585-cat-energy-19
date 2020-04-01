@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Cat energy — Интернет-магазин фитнес-еды для кошек — Подбор программы</title>
   </head>
 
   <body>
@@ -37,11 +37,11 @@
           <ul class="form__list">
             <li class="form__item">
               <label for="form-name">Имя:*</label>
-              <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" placeholder="Барсик">
+              <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" placeholder="Барсик" required>
             </li>
             <li class="form__item">
               <label for="form-weight">Вес (кг):*</label>
-              <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" placeholder="7">
+              <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" placeholder="7" required>
             </li>
             <li class="form__item">
               <label for="form-age">Возраст (лет):</label>
@@ -67,11 +67,11 @@
             <ul class="form__list">
               <li class="form__item">
                 <label for="form-email">E-mail:*</label>
-                <input class="form__input" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <input class="form__input" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form__item">
                 <label for="form-number">Телефон:*</label>
-                <input class="form__input" id="form-number" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+                <input class="form__input" id="form-number" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -109,6 +109,13 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p>
+            <img src="img/map.png" width="320" height="400" alt="Офис по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          </p>
+        </div>
         <a class="page-footer__logo" href="index.html">
           <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип интернет-магазина Cat energy">
         </a>
@@ -131,6 +138,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
