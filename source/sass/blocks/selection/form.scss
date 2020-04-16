@@ -1,0 +1,27 @@
+.form {
+  text-transform: uppercase;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.form label {
+  margin-right: 15px;
+}
+
+.form input[type="text"] {
+  flex-grow: 1;
+
+  height: 45px;
+}

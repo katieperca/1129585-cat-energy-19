@@ -1,0 +1,34 @@
+.contacts--inner {
+  background-color: #f2f2f2;
+}
+
+.contacts__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.contacts__slogan {
+  margin: 0;
+  margin-right: auto;
+  width: 150px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  margin: 0;
+  margin-left: auto;
+  width: 150px;
+
+  font-family: $font-arial;
+  line-height: 1.43;
+}
+
+.contacts__map {
+  margin: -3px;
+  text-align: center;
+}

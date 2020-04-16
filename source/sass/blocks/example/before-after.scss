@@ -1,0 +1,38 @@
+.before-after {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+
+  list-style: none;
+}
+
+.before-after__item {
+  width: calc(50% - 16px);
+  height: 56px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.before-after__value {
+  margin: 10px 0 7px 0;
+
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.before-after__characteristic {
+  width: 87px;
+  padding: 0 5px;
+  margin: 0 auto;
+
+  font-family: $font-arial;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+
+  background-color: #f2f2f2;
+}

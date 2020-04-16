@@ -1,0 +1,28 @@
+.extra {
+  padding-bottom: 17px;
+
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra__title {
+  margin: 15px 0;
+
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.extra__properties {
+  width: 100%;
+  margin-bottom: 10px;
+
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.extra__properties td:last-child {
+  text-align: right;
+}
