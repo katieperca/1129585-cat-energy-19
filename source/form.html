@@ -35,7 +35,7 @@
 
     <main class="page-main container">
       <h1 class="page-main__heading">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__text">Заполните анкету и мы подберем <br>программу питания для вашего кота</p>
       <section class="selection">
         <h2 class="visually-hidden">Форма подбора программы</h2>
         <form class="selection__form form" action="https://echo.htmlacademy.ru" method="get">
@@ -53,16 +53,16 @@
               <input class="form__input form__input--age-field" id="form-age" type="text" name="age" placeholder="7">
             </li>
           </ul>
-          <ul class="form__list">
-            <li class="form__item">
+          <ul class="form__list form__list--radio">
+            <li class="form__item form__item--radio">
               <input class="form__input" id="form-weight-loss" type="radio" name="program-type" value="weight-loss" checked>
               <label for="form-weight-loss">Похудение</label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--radio">
               <input class="form__input" id="form-muscle-gain" type="radio" name="program-type" value="muscle-gain">
               <label for="form-muscle-gain">Набор массы</label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--radio">
               <input class="form__input" id="form-dont-know" type="radio" name="program-type" value="dont-know">
               <label for="form-dont-know">Не знаю (нужен ваш совет)</label>
             </li>
@@ -88,19 +88,19 @@
           <fieldset>
             <legend>Дополнительно</legend>
             <ul>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <input class="form__input" id="form-sweetener" type="checkbox" name="sweetener" checked>
                 <label for="form-sweetener">Сахарозаменитель</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <input class="form__input" id="form-water" type="checkbox" name="water">
                 <label for="form-water">Питьевая вода</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <input class="form__input" id="form-milk" type="checkbox" name="milk">
                 <label for="form-milk">Молоко</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--checkbox">
                 <input class="form__input" id="form-vitamines" type="checkbox" name="sweetener">
                 <label for="form-vitamines">Витамины</label>
               </li>
