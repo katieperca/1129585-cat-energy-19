@@ -1,0 +1,20 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.copyright__link--text {
+  padding: 10px 0;
+
+  font-family: $font-arial;
+  color: #444444;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.copyright__link--logo img {
+  width: 37px;
+  height: 44px;
+}

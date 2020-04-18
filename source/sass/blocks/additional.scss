@@ -1,0 +1,31 @@
+.additional {
+  position: relative;
+}
+
+.additional__title {
+  margin: 0;
+  padding: 30px 20px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 42px;
+    right: 0;
+
+    width: 20vw;
+    height: 3px;
+
+    background-color: #68b738;
+  }
+}
+
+.additional__list {
+  margin: 0;
+
+  list-style: none;
+}
