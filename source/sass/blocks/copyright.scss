@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  max-width: $mobile-width;
 }
 
 .copyright__link--text {
@@ -14,7 +17,21 @@
   line-height: 1;
 }
 
+.copyright__link--logo {
+  text-align: right;
+  width: 47px;
+  height: 54px;
+}
+
 .copyright__link--logo img {
-  width: 37px;
-  height: 44px;
+  text-align: right;
+  width: 47px;
+  height: 54px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
 }

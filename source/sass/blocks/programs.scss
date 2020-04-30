@@ -1,9 +1,5 @@
 .programs {
-  margin-top: 135px;
-}
-
-.programs__selection-button {
-  margin: 3px 0 22px 0;
+  margin-top: 196px;
 }
 
 .programs__list {
@@ -14,38 +10,27 @@
 }
 
 .programs__item {
-  min-width: 280px;
-  padding: 20px 20px;
-  margin-bottom: 20px;
-
-  background-color: #f2f2f2;
-}
-
-.programs__title {
   position: relative;
 
-  margin: 0;
-  padding-left: 70px;
+  min-width: 280px;
+  padding: 31px 20px 20px 20px;
+  margin-bottom: 19px;
 
-
-  font-size: 24px;
-  line-height: 1.54;
-  font-weight: normal;
-  text-transform: uppercase;
+  background-color: #f2f2f2;
 
   &::before {
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 25px;
+    left: 21px;
 
     width: 50px;
     height: 50px;
 
     border-radius: 50%;
 
-    background-color: $bg-leaf;
+    background-color: tomato;
   }
 
   &::after {
@@ -57,8 +42,8 @@
   }
 
   &--weight-loss::after {
-    top: 0;
-    left: 10px;
+    top: 23px;
+    left: 30px;
 
     width: 35px;
     height: 49px;
@@ -67,8 +52,8 @@
   }
 
   &--muscle-gain::after {
-    top: 10px;
-    left: -10px;
+    top: 35px;
+    left: 12px;
 
     width: 67px;
     height: 28px;
@@ -77,9 +62,19 @@
   }
 }
 
+.programs__title {
+  margin: 0;
+  padding-left: 70px;
+
+  font-size: 24px;
+  line-height: 1.54;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 .programs__description {
-  margin: 35px 0 20px 0;
-  padding-bottom: 24px;
+  margin: 30px 0 17px 0;
+  padding-bottom: 22px;
 
   font-family: $font-arial;
   font-size: 14px;
@@ -93,7 +88,6 @@
   position: relative;
 
   margin: 0;
-  margin-top: 20px;
 
   font-size: 16px;
   color: #111111;
@@ -104,12 +98,158 @@
 
     position: absolute;
     top: 6px;
-    left: 98px;
+    left: 95px;
 
     width: 25px;
     height: 12px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-top: 5px;
+  }
+
+  .programs__item {
+    position: relative;
+
+    margin-bottom: 32px;
+    padding: 75px 275px 60px 52px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: 92px;
+      left: inherit;
+      right: 62px;
+
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--weight-loss::after {
+      top: 80px;
+      left: inherit;
+      right: 92px;
+
+      width: 141px;
+      height: 194px;
+    }
+
+    &--muscle-gain::after {
+      top: 135px;
+      left: inherit;
+      right: 28px;
+
+      width: 268px;
+      height: 113px;
+    }
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 1;
+
+    &::before {
+      top: 9px;
+      left: 131px;
+
+      width: 24px;
+      height: 11px;
+    }
+  }
+
+  .programs__title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .programs__description {
+    margin: 25px 0 55px 0;
+    padding: 0;
+
+    font-family: $font-arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444444;
+
+    border: none;
+
+    &--muscle-gain {
+      padding-right: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-top: 80px;
+  }
+
+  .programs__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    padding: 76px 40px 60px 52px;
+    margin: 0;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--weight-loss::after {
+      top: 41px;
+      left: 67px;
+
+      width: 71px;
+      height: 97px;
+    }
+
+    &--muscle-gain::after {
+      top: 69px;
+      left: 34px;
+
+      width: 134px;
+      height: 57px;
+    }
+  }
+
+  .programs__title {
+    padding-left: 164px;
+
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .programs__description {
+    margin: 75px 0 6px 0;
+    padding-bottom: 24px;
+  }
+
+  .programs__link {
+    &::before {
+      top: 9px;
+      left: 133px;
+
+      width: 25px;
+      height: 12px;
+    }
   }
 }

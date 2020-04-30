@@ -1,13 +1,13 @@
 .advantages {
   margin: 0;
-  margin-top: 25px;
+  margin-top: 19px;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 23px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 36px;
   line-height: 1.67;
@@ -29,6 +29,7 @@
 
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   min-height: 60px;
   padding-left: 80px;
   margin-bottom: 20px;
@@ -74,5 +75,111 @@
 
   &--fast::after {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    margin: 0;
+    margin-top: 46px;
+    padding: 0;
+    padding-bottom: 0;
+
+    border-bottom: 1px solid #000000;
+  }
+
+  .advantages__title {
+    margin: 0;
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 1;
+    font-weight: normal;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 80px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .advantages__item-wrapper {
+    position: relative;
+    padding: 31px 0;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -14px;
+      left: 114px;
+      z-index: -1;
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 1;
+      color: #f2f2f2;
+    }
+
+    &--healthy::after {
+      content: "1";
+    }
+
+    &--cook::after {
+      content: "2";
+    }
+
+    &--comfort::after {
+      content: "3";
+    }
+
+    &--fast::after {
+      content: "4";
+    }
+  }
+
+  .advantages__item {
+    position: relative;
+
+    align-items: flex-start;
+    width: 245px;
+    height: 235px;
+    padding: 0;
+    padding-top: 112px;
+    margin-bottom: 20px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 15px;
+      left: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-top: 75px;
+
+    border: none;
+  }
+
+  .advantages__list {
+    padding-right: 0;
+  }
+
+  .advantages__item-wrapper {
+    padding-top: 25px;
+  }
+
+  .advantages__item {
+    padding-top: 112px;
   }
 }

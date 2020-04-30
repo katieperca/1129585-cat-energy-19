@@ -50,26 +50,46 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+.visually-hidden-normal {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  border: 0;
+
+  clip-path: inset(100%);
+}
+
 .visually-hidden-input {
   display: none;
 }
 
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
-  max-width: $mobile-width-container;
+  max-width: $mobile-width;
 }
 
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 30px;
-    max-width: $tablet-width-container;
+    max-width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    padding: 0 110px;
-    max-width: $desktop-width-container;
+    padding: 0 40px;
+    max-width: $desktop-width;
   }
 }
