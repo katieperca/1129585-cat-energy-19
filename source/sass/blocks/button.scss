@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   width: 100%;
-  padding: 14px 0 11px 0;
+  padding: 11px 0 11px 0;
 
   text-transform: uppercase;
   text-align: center;
@@ -10,6 +10,12 @@
   background-color: $bg-leaf;
   border: none;
 
+  &--catalog {
+    padding: 11px 0 9px 0;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   &:hover,
   &:focus {
     background-color: #5eaa2f;
@@ -17,5 +23,17 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    &--catalog {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 }

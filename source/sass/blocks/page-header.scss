@@ -2,12 +2,73 @@
   border-bottom: 1px solid #cdcdcd;
 }
 
-.page-header__logo-wrapper {
-  padding-top: 11px;
-  padding-bottom: 15px;
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 39px;
 }
 
-.page-header__logo-image {
+.page-header__logo-wrapper {
+  padding: 11px 0 13px 0;
+}
+
+.page-header__logo img {
   width: 191px;
   height: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    border: none;
+  }
+
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 59px;
+    padding-top: 24px;
+  }
+
+  .page-header__logo-wrapper {
+    padding: 0;
+  }
+
+  .page-header__logo img {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+
+    &--main::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: inherit;
+      z-index: -1;
+
+      width: 50%;
+      height: 696px;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .page-header__wrapper {
+    min-height: 60px;
+    padding-top: 54px;
+  }
+
+  .page-header__logo img {
+    width: 203px;
+    height: 60px;
+  }
 }

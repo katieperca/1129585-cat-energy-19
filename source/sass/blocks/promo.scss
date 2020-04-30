@@ -1,14 +1,19 @@
 .promo {
-  background-color: $bg-leaf;
+  background-color: #63a73a;
+  height: 305px;
 }
 
-.promo__heading-wrapper {
+.promo__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
+  flex-wrap: wrap;
+}
+
+.promo__heading-wrapper {
   height: 305px;
-  padding-top: 25px;
+  width: 100%;
+  padding: 27px 0 0 0;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -16,7 +21,7 @@
 }
 
 .promo__heading {
-  margin: 0 17px;
+  margin: 0;
 
   font-size: 36px;
   line-height: 1;
@@ -32,24 +37,114 @@
   position: relative;
 
   margin: 0;
-  margin-top: 19px;
+  margin-top: 24px;
 
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+}
 
-  &::after {
-    content: "";
+.promo__picture {
+  width: 280px;
+  height: 270px;
+  margin-top: -140px;
+  margin-bottom: 2px;
+}
 
-    position: absolute;
-    top: 50px;
-    right: -40px;
+.promo__selection-button {
+  margin: 3px 0 22px 0;
+}
 
-    width: 280px;
-    height: 270px;
+@media (min-width: $tablet-width) {
+  .promo {
+    margin-top: 55px;
+    background: none;
+    min-height: 806px;
+  }
 
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  .promo__heading-wrapper {
+    padding: 0;
+    padding-left: 88px;
+    background: none;
+  }
+
+  .promo__wrapper {
+    align-items: flex-start;
+    height: auto;
+    background: none;
+  }
+
+  .promo__heading {
+    margin: 0;
+    padding: 0;
+    width: 415px;
+
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+  }
+
+  .promo__slogan {
+    margin: 0;
+    margin-top: 40px;
+
+    font-size: 20px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .promo__picture {
+    width: 709px;
+    height: 609px;
+    margin: 0;
+    margin-top: -105px;
+  }
+
+  .promo__selection-button {
+    width: 245px;
+    margin: 0;
+    margin-top: -579px;
+    margin-left: 88px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 474px;
+    margin-top: 105px;
+    margin-bottom: 0;
+  }
+
+  .promo__wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    background: none;
+  }
+
+  .promo__heading-wrapper {
+    width: auto;
+    padding-left: 80px;
+  }
+
+  .promo__picture {
+    width: 552px;
+    height: 499px;
+    margin-top: -80px;
+    margin-left: -45px;
+  }
+
+  .promo__selection-button {
+    width: 245px;
+    margin: 0;
+    margin-left: 80px;
+    margin-top: -185px;
+
+
+    font-size: 20px;
   }
 }
