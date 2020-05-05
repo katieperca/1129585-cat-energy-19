@@ -10,7 +10,8 @@
   background-color: $bg-leaf;
   border: none;
 
-  &--catalog {
+  &--catalog,
+  &--form {
     padding: 11px 0 9px 0;
     font-size: 16px;
     line-height: 1.25;
@@ -34,6 +35,13 @@
     &--catalog {
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+
+    &--form {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      line-height: 1;
     }
   }
 }
