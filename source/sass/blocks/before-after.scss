@@ -36,3 +36,47 @@
 
   background-color: #f2f2f2;
 }
+
+@media (min-width: $tablet-width) {
+  .before-after {
+    margin: 0;
+    margin-right: 100px;
+  }
+
+  .before-after__item {
+    width: 162px;
+    height: 72px;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+
+  .before-after__value {
+    margin: 15px 0 10px 0;
+
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .before-after__characteristic {
+    width: auto;
+    padding: 0;
+    margin: 0 10px 0 10px;
+
+    font-size: 14px;
+    line-height: 1;
+
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .before-after {
+    margin-right: 0;
+  }
+
+  .before-after__characteristic {
+    background-color: #eaeaea;
+  }
+}
