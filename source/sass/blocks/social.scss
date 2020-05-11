@@ -1,18 +1,14 @@
 .social {
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: $mobile-width;
-
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 }
 
 .social__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 165px;
+  width: 125px;
   padding: 22px 0 18px 0;
   margin: 0 auto;
 
@@ -22,12 +18,28 @@
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
-    margin: 0;
 
     border: none;
   }
 
   .social__list {
     padding: 0;
+  }
+
+  .social__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--ig {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
