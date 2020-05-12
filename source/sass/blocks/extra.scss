@@ -64,6 +64,12 @@
     font-size: 16px;
     line-height: 1.25;
     text-align: right;
+
+    td {
+      &:nth-child(2) {
+        width: 93px;
+      }
+    }
   }
 
   .extra__button {
@@ -90,7 +96,6 @@
   }
 
   .extra__properties {
-
     width: 285px;
     margin: 0;
     margin-top: 5px;
