@@ -63,7 +63,7 @@
   align-items: center;
   width: 200px;
   margin: 0 auto;
-  padding: 35px 0;
+  padding: 35px 0 34px 0;
 }
 
 .example__toggle {
@@ -110,6 +110,7 @@
 }
 
 .toggle-before:checked ~ .page-main .example__item--before,
+.toggle-middle:checked ~ .page-main .example__item--before,
 .toggle-after:checked ~ .page-main .example__item--after {
   display: block;
 }
@@ -120,7 +121,7 @@
 
     padding: 0;
     padding-top: 43px;
-    padding-bottom: 55px;
+    padding-bottom: 51px;
 
     background-color: #ffffff;
 
@@ -137,7 +138,8 @@
       height: 462px;
       width: 100%;
 
-      background-color: #eaeaea;
+      background-color: #f2f2f2;
+      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
   }
 
@@ -198,9 +200,55 @@
   .example__item {
     position: absolute;
 
+    overflow: hidden;
+
+    display: block;
     width: auto;
     height: 517px;
-    margin-left: 22px;
+    margin-left: 8px;
+
+    &--before {
+      width: 50%;
+      height: 632px;
+
+      img {
+        z-index: 3;
+        position: relative;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 632px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #ffffff 170px, #f2f2f2 170px);
+      }
+    }
+
+    &--after {
+      display: block;
+      height: 632px;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 632px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #ffffff 170px, #eaeaea 170px);
+      }
+    }
+
+    picture {
+      display: block;
+      width: 690px;
+    }
 
     img {
       width: 690px;
@@ -235,7 +283,6 @@
       border: none;
     }
   }
-
 
   .example__scale {
     position: relative;
@@ -292,6 +339,14 @@
   }
 }
 
+.toggle-before:checked ~ .page-main .example__item--before {
+  width: 100%;
+}
+
+.toggle-after:checked ~ .page-main .example__item--after {
+  z-index: 4;
+}
+
 @media (min-width: $desktop-width) {
   .example {
     padding-bottom: 0;
@@ -300,6 +355,8 @@
     &::after {
       top: inherit;
       bottom: 0;
+
+      background-image: linear-gradient(to right, #f2f2f2 74%, #eaeaea 74%);
     }
   }
 
@@ -343,8 +400,29 @@
   .example__slider {
     margin: 0;
     margin-top: -121px;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
     width: 650px;
+  }
+
+  .example__item {
+    &--before {
+      width: 52%;
+      height: 658px;
+
+      &::after {
+        background-image: linear-gradient(to bottom, #ffffff 196px, #f2f2f2 196px);
+        height: 658px;
+      }
+    }
+
+    &--after {
+      height: 658px;
+
+      &::after {
+        background-image: linear-gradient(to bottom, #ffffff 196px, #eaeaea 196px);
+        height: 658px;
+      }
+    }
   }
 
   .example__toggles {

@@ -32,7 +32,8 @@
   position: relative;
 
   overflow: hidden;
-  padding-bottom: 49.79%;
+  padding: 0;
+  height: 360px;
 }
 
 .contacts__map iframe {
@@ -41,7 +42,6 @@
   top: 0;
 
   width: 100%;
-  height: 360px;
 
   border: none;
 }
