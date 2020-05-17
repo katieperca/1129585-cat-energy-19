@@ -19,6 +19,7 @@ body {
   color: #111111;
   font-style: normal;
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 img {
@@ -80,9 +81,18 @@ input[type="radio"].visually-hidden {
   max-width: $mobile-width;
 }
 
+.center {
+  margin: 0 auto;
+  max-width: $mobile-width;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 30px;
+    max-width: $tablet-width;
+  }
+
+  .center {
     max-width: $tablet-width;
   }
 }
@@ -90,6 +100,10 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop-width) {
   .container {
     padding: 0 40px;
+    max-width: $desktop-width;
+  }
+
+  .center {
     max-width: $desktop-width;
   }
 }

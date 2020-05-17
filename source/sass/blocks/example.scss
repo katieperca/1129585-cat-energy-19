@@ -25,7 +25,7 @@
 
 .example__slider {
   margin: 0;
-  margin-top: 37px;
+  margin-top: 34px;
 }
 
 .example__list {
@@ -33,19 +33,19 @@
 
   margin: 0 auto;
   padding: 0;
-  width: 311px;
-  height: 235px;
+  height: 232px;
 }
 
 .example__item {
   position: absolute;
+
   display: none;
 
   img {
-    min-width: 311px;
-    height: 235px;
+    min-width: 320px;
+    height: 240px;
     margin: 0;
-    margin-left: -16px;
+    margin-left: -20px;
   }
 }
 
@@ -59,11 +59,10 @@
 
 .example__toggles {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 200px;
-  margin: 0 auto;
-  padding: 35px 0;
+  width: 197px;
+  margin-left: 44px;
+  padding: 39px 0 36px 0;
 }
 
 .example__toggle {
@@ -82,7 +81,7 @@
 
   width: 84px;
   height: 15px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 18px;
 }
 
 .example__scale-bar {
@@ -110,6 +109,7 @@
 }
 
 .toggle-before:checked ~ .page-main .example__item--before,
+.toggle-middle:checked ~ .page-main .example__item--before,
 .toggle-after:checked ~ .page-main .example__item--after {
   display: block;
 }
@@ -120,7 +120,7 @@
 
     padding: 0;
     padding-top: 43px;
-    padding-bottom: 55px;
+    padding-bottom: 51px;
 
     background-color: #ffffff;
 
@@ -137,7 +137,8 @@
       height: 462px;
       width: 100%;
 
-      background-color: #eaeaea;
+      background-color: #f2f2f2;
+      background-image: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
   }
 
@@ -188,6 +189,7 @@
     z-index: 3;
 
     margin: 0;
+    margin-left: 8px;
     padding: 0;
     width: 690px;
     height: 517px;
@@ -198,9 +200,55 @@
   .example__item {
     position: absolute;
 
+    overflow: hidden;
+
+    display: block;
     width: auto;
     height: 517px;
-    margin-left: 22px;
+    margin-left: 8px;
+
+    &--before {
+      width: 49%;
+      height: 632px;
+
+      img {
+        z-index: 3;
+        position: relative;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 632px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #ffffff 170px, #f2f2f2 170px);
+      }
+    }
+
+    &--after {
+      display: block;
+      height: 632px;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 632px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #ffffff 170px, #eaeaea 170px);
+      }
+    }
+
+    picture {
+      display: block;
+      width: 690px;
+    }
 
     img {
       width: 690px;
@@ -215,6 +263,7 @@
 
     width: 570px;
     padding: 19px 0;
+    margin-left: 68px;
   }
 
   .example__toggle {
@@ -236,12 +285,12 @@
     }
   }
 
-
   .example__scale {
     position: relative;
 
     width: 428px;
     height: 6px;
+    margin-left: 25px;
   }
 
   .example__scale-bar {
@@ -258,8 +307,8 @@
     left: 198px;
 
     box-sizing: content-box;
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
 
     background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -270,8 +319,8 @@
       content: "";
 
       position: absolute;
-      top: 13px;
-      left: 13px;
+      top: 12px;
+      left: 12px;
 
       width: 8px;
       height: 8px;
@@ -292,6 +341,14 @@
   }
 }
 
+.toggle-before:checked ~ .page-main .example__item--before {
+  width: 100%;
+}
+
+.toggle-after:checked ~ .page-main .example__item--after {
+  z-index: 4;
+}
+
 @media (min-width: $desktop-width) {
   .example {
     padding-bottom: 0;
@@ -300,6 +357,8 @@
     &::after {
       top: inherit;
       bottom: 0;
+
+      background-image: linear-gradient(to right, #f2f2f2 74%, #eaeaea 74%);
     }
   }
 
@@ -342,13 +401,44 @@
 
   .example__slider {
     margin: 0;
-    margin-top: -121px;
-    padding-bottom: 60px;
+    margin-top: -115px;
+    padding-bottom: 56px;
     width: 650px;
+  }
+
+  .example__list {
+    margin-left: 0;
+  }
+
+  .example__item {
+    margin-left: 0;
+
+    &--before {
+      width: 53%;
+      height: 658px;
+
+      &::after {
+        background-image: linear-gradient(to bottom, #ffffff 191px, #f2f2f2 191px);
+        height: 658px;
+      }
+    }
+
+    &--after {
+      height: 658px;
+
+      &::after {
+        background-image: linear-gradient(to bottom, #ffffff 191px, #eaeaea 191px);
+        height: 658px;
+      }
+    }
   }
 
   .example__toggles {
     padding: 0;
-    margin: 45px 0 14px 80px;
+    margin: 40px 0 14px 80px;
+  }
+
+  .example__scale {
+    margin-bottom: 6px;
   }
 }
