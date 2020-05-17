@@ -25,7 +25,7 @@
 
 .example__slider {
   margin: 0;
-  margin-top: 37px;
+  margin-top: 34px;
 }
 
 .example__list {
@@ -33,19 +33,19 @@
 
   margin: 0 auto;
   padding: 0;
-  width: 311px;
-  height: 235px;
+  height: 232px;
 }
 
 .example__item {
   position: absolute;
+
   display: none;
 
   img {
-    min-width: 311px;
-    height: 235px;
+    min-width: 320px;
+    height: 240px;
     margin: 0;
-    margin-left: -16px;
+    margin-left: -20px;
   }
 }
 
@@ -59,11 +59,10 @@
 
 .example__toggles {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 200px;
-  margin: 0 auto;
-  padding: 35px 0 34px 0;
+  width: 197px;
+  margin-left: 44px;
+  padding: 39px 0 36px 0;
 }
 
 .example__toggle {
@@ -82,7 +81,7 @@
 
   width: 84px;
   height: 15px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 18px;
 }
 
 .example__scale-bar {
@@ -190,6 +189,7 @@
     z-index: 3;
 
     margin: 0;
+    margin-left: 8px;
     padding: 0;
     width: 690px;
     height: 517px;
@@ -208,7 +208,7 @@
     margin-left: 8px;
 
     &--before {
-      width: 50%;
+      width: 49%;
       height: 632px;
 
       img {
@@ -263,6 +263,7 @@
 
     width: 570px;
     padding: 19px 0;
+    margin-left: 68px;
   }
 
   .example__toggle {
@@ -289,6 +290,7 @@
 
     width: 428px;
     height: 6px;
+    margin-left: 25px;
   }
 
   .example__scale-bar {
@@ -305,8 +307,8 @@
     left: 198px;
 
     box-sizing: content-box;
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
 
     background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -317,8 +319,8 @@
       content: "";
 
       position: absolute;
-      top: 13px;
-      left: 13px;
+      top: 12px;
+      left: 12px;
 
       width: 8px;
       height: 8px;
@@ -399,18 +401,24 @@
 
   .example__slider {
     margin: 0;
-    margin-top: -121px;
+    margin-top: -115px;
     padding-bottom: 56px;
     width: 650px;
   }
 
+  .example__list {
+    margin-left: 0;
+  }
+
   .example__item {
+    margin-left: 0;
+
     &--before {
-      width: 52%;
+      width: 53%;
       height: 658px;
 
       &::after {
-        background-image: linear-gradient(to bottom, #ffffff 196px, #f2f2f2 196px);
+        background-image: linear-gradient(to bottom, #ffffff 191px, #f2f2f2 191px);
         height: 658px;
       }
     }
@@ -419,7 +427,7 @@
       height: 658px;
 
       &::after {
-        background-image: linear-gradient(to bottom, #ffffff 196px, #eaeaea 196px);
+        background-image: linear-gradient(to bottom, #ffffff 191px, #eaeaea 191px);
         height: 658px;
       }
     }
@@ -427,6 +435,10 @@
 
   .example__toggles {
     padding: 0;
-    margin: 45px 0 14px 80px;
+    margin: 40px 0 14px 80px;
+  }
+
+  .example__scale {
+    margin-bottom: 6px;
   }
 }

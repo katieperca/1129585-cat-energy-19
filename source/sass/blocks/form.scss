@@ -8,6 +8,8 @@
 
 .form__list-wrapper {
   margin-top: 29px;
+
+  overflow-x: hidden;
 }
 
 .form__title {
@@ -28,7 +30,7 @@
   background-color: #ffffff;
 
   &--extra {
-    margin-bottom: 41px;
+    margin-bottom: 39px;
   }
 
   &--contacts {
@@ -56,7 +58,7 @@
 
   &::after {
     left: 0;
-    top: 14px;
+    top: 13px;
 
     width: 100vw;
   }
@@ -73,7 +75,7 @@
 
   &--radio {
     margin: 23px -20px 0 -20px;
-    padding: 26px 0 0 20px;
+    padding: 26px 20px 26px 20px;
 
     border: 1px solid #ededed;
   }
@@ -86,9 +88,13 @@
   padding: 0;
   margin-bottom: 14px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--radio,
   &--checkbox {
-    padding-left: 45px;
+    padding-left: 46px;
     margin: 0;
     margin-bottom: 25px;
   }
@@ -135,7 +141,7 @@
     content: "";
 
     position: absolute;
-    top: -7px;
+    top: -6px;
     left: -46px;
 
     width: 30px;
@@ -231,7 +237,7 @@ form textarea {
   display: block;
   width: 100%;
   min-height: 150px;
-  padding: 13px;
+  padding: 12px 12px 13px 15px;
 
   border-color: rgba(205, 205, 205, 0.5);
 
@@ -257,7 +263,11 @@ form textarea {
 @media (min-width: $tablet-width) {
   .form {
     margin-top: 65px;
-    padding: 0 37px 62px 41px;
+    padding-bottom: 62px;
+  }
+
+  .form__input-data-wrapper {
+    padding: 0 66px 0 72px;
   }
 
   .form__list-wrapper {
@@ -266,7 +276,6 @@ form textarea {
 
   .form__title {
     margin-bottom: 56px;
-    margin-left: -40px;
     padding-left: 40px;
 
     font-size: 36px;
@@ -275,11 +284,11 @@ form textarea {
     background-color: #ffffff;
 
     &--extra {
-      margin-bottom: 67px;
+      margin-bottom: 50px;
     }
 
     &--contacts {
-      max-width: 554px;
+      max-width: 575px;
     }
 
     &::before,
@@ -297,11 +306,18 @@ form textarea {
     line-height: 1;
     margin-top: 20px;
 
+    &--contacts,
+    &--checkbox,
+    &--textarea {
+      padding: 0 35px 0 42px;
+    }
+
     &--radio {
       margin: 0;
       margin-top: 72px;
       margin-bottom: 75px;
-      padding-top: 0;
+      padding-top: 33px;
+      padding-bottom: 34px;
     }
 
     &--checkbox {
@@ -309,15 +325,20 @@ form textarea {
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 0;
+      padding-top: 20px;
     }
   }
 
   .form__item {
-    margin: 20px 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &--radio {
       padding-left: 65px;
-      margin: 32px 0 34px 0;
+      margin-bottom: 34px;
     }
 
     &--checkbox {
@@ -325,6 +346,10 @@ form textarea {
       padding-left: 58px;
       margin: 0;
       margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 50px;
+      }
     }
   }
 
@@ -381,7 +406,6 @@ form textarea {
     width: 100%;
     min-height: 174px;
     padding: 10px 10px 10px 17px;
-    margin-top: 20px;
 
     border-color: rgba(205, 205, 205, 0.5);
 
@@ -395,12 +419,12 @@ form textarea {
     display: flex;
     align-items: center;
     margin-top: 6px;
-    padding: 13px 0;
+    padding: 10px 41px;
   }
 
   .form__button {
     width: 283px;
-    margin-right: 61px;
+    margin-right: 63px;
   }
 
   .form__note {
@@ -423,6 +447,8 @@ form textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 0 40px 0 42px;
   }
 
   .form__list-wrapper {
@@ -445,6 +471,7 @@ form textarea {
 
   .form__list {
     margin: 0;
+    padding: 0;
 
     &--radio {
       margin: 0;

@@ -38,13 +38,15 @@
       </div>
     </header>
 
-    <main class="page-main container">
-      <h1 class="page-main__heading page-main__heading--inner">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету и мы подберем <br>программу питания для вашего кота</p>
+    <main class="page-main">
+      <div class="container">
+        <h1 class="page-main__heading page-main__heading--inner">Подбор программы</h1>
+        <p class="page-main__text">Заполните анкету и мы подберем <br>программу питания для вашего кота</p>
+      </div>
       <section class="selection">
         <h2 class="visually-hidden">Форма подбора программы</h2>
         <form class="selection__form form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="form__input-data-wrapper">
+          <div class="form__input-data-wrapper container">
             <ul class="form__list form__list--input-data">
               <li class="form__item">
                 <label for="form-name">Имя:*</label>
@@ -75,47 +77,57 @@
             </ul>
           </div>
           <div class="form__list-wrapper form__list-wrapper--contacts">
-            <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
-            <ul class="form__list form__list--contacts">
-              <li class="form__item form__item--contacts">
-                <label for="form-email">E-mail:*</label>
-                <input class="form__input form__input--email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
-              </li>
-              <li class="form__item form__item--contacts">
-                <label for="form-number">Телефон:*</label>
-                <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
-              </li>
-            </ul>
+            <div class="container">
+              <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
+              <ul class="form__list form__list--contacts">
+                <li class="form__item form__item--contacts">
+                  <label for="form-email">E-mail:*</label>
+                  <input class="form__input form__input--email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                </li>
+                <li class="form__item form__item--contacts">
+                  <label for="form-number">Телефон:*</label>
+                  <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="form__list-wrapper form__list-wrapper--comment">
-            <h3 class="form__title">Комментарий</h3>
-            <label class="visually-hidden" for="form-text">Поле для комментария</label>
-            <textarea id="form-text" name="text" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="container">
+              <h3 class="form__title">Комментарий</h3>
+              <div class="form__list form__list--textarea">
+                <label class="visually-hidden" for="form-text">Поле для комментария</label>
+                <textarea id="form-text" name="text" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+            </div>
           </div>
           <div class="form__list-wrapper">
-            <h3 class="form__title form__title--extra">Дополнительно</h3>
-            <ul class="form__list form__list--checkbox">
-              <li class="form__item form__item--checkbox">
-                <input class="form__input form__input--checkbox visually-hidden" id="form-sweetener" type="checkbox" name="sweetener" checked>
-                <label for="form-sweetener">Сахарозаменитель</label>
-              </li>
-              <li class="form__item form__item--checkbox">
-                <input class="form__input form__input--checkbox  visually-hidden" id="form-water" type="checkbox" name="water">
-                <label for="form-water">Питьевая вода</label>
-              </li>
-              <li class="form__item form__item--checkbox">
-                <input class="form__input form__input--checkbox visually-hidden" id="form-milk" type="checkbox" name="milk">
-                <label for="form-milk">Молоко</label>
-              </li>
-              <li class="form__item form__item--checkbox">
-                <input class="form__input form__input--checkbox visually-hidden" id="form-vitamines" type="checkbox" name="sweetener">
-                <label for="form-vitamines">Витамины</label>
-              </li>
-            </ul>
+            <div class="container">
+              <h3 class="form__title form__title--extra">Дополнительно</h3>
+              <ul class="form__list form__list--checkbox">
+                <li class="form__item form__item--checkbox">
+                  <input class="form__input form__input--checkbox visually-hidden" id="form-sweetener" type="checkbox" name="sweetener" checked>
+                  <label for="form-sweetener">Сахарозаменитель</label>
+                </li>
+                <li class="form__item form__item--checkbox">
+                  <input class="form__input form__input--checkbox  visually-hidden" id="form-water" type="checkbox" name="water">
+                  <label for="form-water">Питьевая вода</label>
+                </li>
+                <li class="form__item form__item--checkbox">
+                  <input class="form__input form__input--checkbox visually-hidden" id="form-milk" type="checkbox" name="milk">
+                  <label for="form-milk">Молоко</label>
+                </li>
+                <li class="form__item form__item--checkbox">
+                  <input class="form__input form__input--checkbox visually-hidden" id="form-vitamines" type="checkbox" name="sweetener">
+                  <label for="form-vitamines">Витамины</label>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="form__submition-wrapper">
-            <button type="submit" class="form__button button button--form">Отправить заявку</button>
-            <p class="form__note"><sup>*</sup> — Обязательные поля</p>
+          <div class="container">
+            <div class="form__submition-wrapper">
+              <button type="submit" class="form__button button button--form">Отправить заявку</button>
+              <p class="form__note"><sup>*</sup> — Обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>

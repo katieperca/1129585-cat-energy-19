@@ -1,12 +1,16 @@
 .additional {
   margin-top: 27px;
   padding-bottom: 35px;
+
+  overflow-x: hidden;
 }
 
 .additional__title {
   position: relative;
 
+  display: inline-block;
   padding: 0;
+  padding-right: 22px;
   margin: 0;
   margin-bottom: 34px;
 
@@ -14,17 +18,32 @@
   font-weight: normal;
   line-height: 1;
 
+  background-color: #ffffff;
+
+  &::before,
   &::after {
     content: "";
 
     position: absolute;
-    top: 13px;
-    right: -20px;
+    z-index: -2;
 
-    width: 53px;
+    display: block;
     height: 3px;
+    background-color: $bg-leaf;
+  }
 
-    background-color: #68b738;
+  &::before {
+    right: 0;
+
+    display: none;
+    width: 100vw;
+  }
+
+  &::after {
+    left: 0;
+    top: 14px;
+
+    width: 100vw;
   }
 }
 
@@ -40,30 +59,19 @@
   }
 
   .additional__title {
-    padding: 0;
-    padding-left: 37px;
+    padding-left: 40px;
+    margin-bottom: 0;
 
     font-size: 36px;
     line-height: 1;
 
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: 21px;
-      left: -30px;
-
-      width: 30px;
-      height: 3px;
-
-      background-color: #68b738;
+    &::before,
+    &::after {
+      top: 22px;
     }
 
-    &::after {
-      top: 21px;
-      right: -30px;
-
-      width: 325px;
+    &::before {
+      display: block;
     }
   }
 
@@ -74,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .additional {
-    margin-top: 80px;
+    margin-top: 77px;
     padding: 0;
     padding-bottom: 85px;
   }
@@ -87,18 +95,8 @@
   }
 
   .additional__title {
-    padding: 0;
-    margin: 0;
-
-    &::before {
-      width: 70px;
-      left: -110px;
-    }
-
-    &::after {
-      width: 960px;
-      right: -110px;
-    }
+    margin-left: -40px;
+    padding-left: 40px;
   }
 
   .additional__list {
