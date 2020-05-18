@@ -70,6 +70,7 @@
 
   font-size: 16px;
   line-height: 1.13;
+  text-align: left;
 
   list-style: none;
 
@@ -192,7 +193,8 @@
   border-radius: 50%;
 }
 
-.form__input--checkbox + label::after {
+.form__input--che
+ckbox + label::after {
   top: 0;
   left: -41px;
 
@@ -377,8 +379,8 @@ form textarea {
   }
 
   .form__input--radio + label::after {
-    top: 2px;
-    left: -47px;
+    top: 1px;
+    left: -48px;
 
     width: 18px;
     height: 18px;
