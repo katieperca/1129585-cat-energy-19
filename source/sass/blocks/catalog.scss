@@ -87,13 +87,12 @@
   }
 
   .catalog__item {
-    width: 45.76%;
-    height: 431px;
+    width: 45.66%;
     margin: 0;
     margin-top: 140px;
     margin-right: 60px;
     padding: 0;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
 
     border: 1px solid #cdcdcd;
 
@@ -106,7 +105,7 @@
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
-      padding: 165px 37px 35px 37px;
+      padding: 163px 37px 35px 37px;
 
       &::before {
         top: 51px;
@@ -137,8 +136,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    width: 20.08%;
-    margin-right: 80px;
+    width: 20.01%;
+    margin-right: 81px;
 
     &:nth-child(2n) {
       margin-right: 80px;
