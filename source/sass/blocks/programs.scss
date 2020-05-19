@@ -114,6 +114,10 @@
 
   &:active {
     opacity: 0.3;
+
+    &::before {
+      width: 34px;
+    }
   }
 }
 
@@ -171,6 +175,11 @@
 
       width: 24px;
       height: 11px;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      height: 12px;
     }
   }
 
@@ -261,6 +270,11 @@
 
       width: 25px;
       height: 12px;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      height: 13px;
     }
   }
 }

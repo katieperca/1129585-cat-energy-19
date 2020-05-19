@@ -19,19 +19,33 @@
 
 .copyright__link--logo {
   text-align: right;
-  width: 47px;
+  width: 33px;
   height: 54px;
 }
 
-.copyright__link--logo img {
-  text-align: right;
-  width: 47px;
-  height: 54px;
+.copyright__icon {
+  width: 40px;
+  height: 56px;
+
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
     padding: 0;
+  }
+
+  .copyright__link--text {
+    margin-right: 15px;
   }
 }

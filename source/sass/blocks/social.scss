@@ -10,9 +10,22 @@
   flex-wrap: wrap;
   width: 125px;
   padding: 22px 0 18px 0;
-  margin: 0 auto;
+  margin: 0 76px 0 74px;
 
   list-style: none;
+}
+
+.social__icon {
+  fill: #666666;
+
+  &:hover,
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +37,7 @@
 
   .social__list {
     padding: 0;
+    margin: 0 47px 0 103px;
   }
 
   .social__icon {
@@ -41,5 +55,12 @@
       width: 14px;
       height: 28px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding: 0;
+    margin: 0 53px 0 155px;
   }
 }
