@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Cat energy — Интернет-магазин фитнес-еды для кошек — Подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -49,30 +51,30 @@
           <div class="form__input-data-wrapper container">
             <ul class="form__list form__list--input-data">
               <li class="form__item">
-                <label for="form-name">Имя:*</label>
+                <label class="form__label" for="form-name">Имя:*</label>
                 <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" placeholder="Барсик">
               </li>
               <li class="form__item">
-                <label for="form-weight">Вес (кг):*</label>
+                <label class="form__label" for="form-weight">Вес (кг):*</label>
                 <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" placeholder="7">
               </li>
               <li class="form__item">
-                <label for="form-age">Возраст (лет):</label>
+                <label class="form__label" for="form-age">Возраст (лет):</label>
                 <input class="form__input form__input--age-field" id="form-age" type="text" name="age" placeholder="7">
               </li>
             </ul>
             <ul class="form__list form__list--input-data form__list--radio">
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio visually-hidden" id="form-weight-loss" type="radio" name="program-type" value="weight-loss" checked="">
-                <label for="form-weight-loss" tabindex="0">Похудение</label>
+                <label class="form__label form__label--radio" for="form-weight-loss" tabindex="0">Похудение</label>
               </li>
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio visually-hidden" id="form-muscle-gain" type="radio" name="program-type" value="muscle-gain">
-                <label for="form-muscle-gain" tabindex="0">Набор массы</label>
+                <label class="form__label form__label--radio" for="form-muscle-gain" tabindex="0">Набор массы</label>
               </li>
               <li class="form__item form__item--radio">
                 <input class="form__input form__input--radio visually-hidden" id="form-dont-know" type="radio" name="program-type" value="dont-know">
-                <label for="form-dont-know" tabindex="0">Не знаю (нужен ваш совет)</label>
+                <label class="form__label form__label--radio" for="form-dont-know" tabindex="0">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </div>
@@ -81,11 +83,11 @@
               <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
               <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--contacts">
-                  <label for="form-email">E-mail:*</label>
+                  <label class="form__label" for="form-email">E-mail:*</label>
                   <input class="form__input form__input--email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                 </li>
                 <li class="form__item form__item--contacts">
-                  <label for="form-number">Телефон:*</label>
+                  <label class="form__label" for="form-number">Телефон:*</label>
                   <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
                 </li>
               </ul>
@@ -106,19 +108,19 @@
               <ul class="form__list form__list--checkbox">
                 <li class="form__item form__item--checkbox">
                   <input class="form__input form__input--checkbox visually-hidden" id="form-sweetener" type="checkbox" name="sweetener" checked="">
-                  <label for="form-sweetener">Сахарозаменитель</label>
+                  <label class="form__label form__label--checkbox" for="form-sweetener" tabindex="0">Сахарозаменитель</label>
                 </li>
                 <li class="form__item form__item--checkbox">
                   <input class="form__input form__input--checkbox  visually-hidden" id="form-water" type="checkbox" name="water">
-                  <label for="form-water">Питьевая вода</label>
+                  <label class="form__label form__label--checkbox"  for="form-water" tabindex="0">Питьевая вода</label>
                 </li>
                 <li class="form__item form__item--checkbox">
                   <input class="form__input form__input--checkbox visually-hidden" id="form-milk" type="checkbox" name="milk">
-                  <label for="form-milk">Молоко</label>
+                  <label class="form__label form__label--checkbox"  for="form-milk" tabindex="0">Молоко</label>
                 </li>
                 <li class="form__item form__item--checkbox">
                   <input class="form__input form__input--checkbox visually-hidden" id="form-vitamines" type="checkbox" name="sweetener">
-                  <label for="form-vitamines">Витамины</label>
+                  <label class="form__label form__label--checkbox"  for="form-vitamines" tabindex="0">Витамины</label>
                 </li>
               </ul>
             </div>
@@ -136,7 +138,7 @@
     <footer class="page-footer">
       <div class="page-footer__contacts contacts contacts--inner">
         <div class="contacts__text-wrapper container">
-          <p class="contacts__slogan">Приглашаем <br> к сотрудничеству дилеров!</p>
+          <p class="contacts__slogan">Приглашаем <br> к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map contacts__map--form">
@@ -174,8 +176,8 @@
               </ul>
             </div>
             <div class="page-footer__copyright copyright">
-              <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="copyright__link--text">HTML Academy</span>
                 <svg class="copyright__icon" width="27" height="34"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
                 </svg>
               </a>

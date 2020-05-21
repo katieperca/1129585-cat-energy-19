@@ -90,7 +90,7 @@
     width: 45.66%;
     margin: 0;
     margin-top: 140px;
-    margin-right: 60px;
+    margin-right: 61px;
     padding: 0;
     padding-bottom: 40px;
 
@@ -135,12 +135,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 23px;
+  }
+
   .catalog__item {
-    width: 20.01%;
+    width: 20%;
     margin-right: 81px;
 
     &:nth-child(2n) {
-      margin-right: 80px;
+      margin-right: 81px;
     }
 
     &:nth-child(4n) {

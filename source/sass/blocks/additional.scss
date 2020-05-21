@@ -59,7 +59,7 @@
   }
 
   .additional__title {
-    padding-left: 40px;
+    padding: 0 35px 0 38px;
     margin-bottom: 0;
 
     font-size: 36px;
@@ -82,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .additional {
-    margin-top: 77px;
+    margin-top: 75px;
     padding: 0;
     padding-bottom: 85px;
   }
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin-top: 77px;
+    margin-top: 79px;
   }
 
   .additional__title {

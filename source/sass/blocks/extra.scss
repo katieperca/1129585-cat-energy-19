@@ -38,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 26px 37px 27px 38px;
+    padding: 24px 33px 28px 38px;
 
     border: 1px solid #cdcdcd;
     border-bottom: none;
@@ -59,7 +59,7 @@
   .extra__properties {
     width: 50%;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 3px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -67,14 +67,14 @@
 
     td {
       &:nth-child(2) {
-        width: 93px;
+        width: 96px;
       }
     }
   }
 
   .extra__button {
     width: 100%;
-    margin-top: 18px;
+    margin-top: 21px;
   }
 }
 
@@ -85,7 +85,7 @@
     justify-content: space-between;
     align-items: center;
     width: 896px;
-    padding: 15px 0 16px 0;
+    padding: 16px 0 15px;
 
     border: none;
     border-top: 1px solid #cdcdcd;
@@ -96,7 +96,7 @@
   }
 
   .extra__properties {
-    width: 285px;
+    width: 288px;
     margin: 0;
     margin-top: 5px;
     margin-left: auto;
@@ -108,7 +108,7 @@
 
   .extra__button {
     margin: 0;
-    margin-left: 39px;
+    margin-left: 38px;
     width: 245px;
   }
 }
