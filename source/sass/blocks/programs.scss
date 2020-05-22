@@ -1,5 +1,5 @@
 .programs {
-  margin-top: 196px;
+  margin-top: 21px;
 }
 
 .programs__list {
@@ -101,7 +101,7 @@
     left: 95px;
 
     width: 25px;
-    height: 12px;
+    height: 11px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
@@ -110,6 +110,9 @@
   &:hover::before,
   &:focus::before {
     width: 34px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
@@ -129,8 +132,8 @@
   .programs__item {
     position: relative;
 
-    margin-bottom: 32px;
-    padding: 75px 275px 60px 52px;
+    margin-bottom: 31px;
+    padding: 75px 275px 60px 53px;
 
     &:last-child {
       margin-bottom: 0;
@@ -147,9 +150,9 @@
     }
 
     &--weight-loss::after {
-      top: 80px;
+      top: 79px;
       left: inherit;
-      right: 92px;
+      right: 90px;
 
       width: 141px;
       height: 194px;
@@ -176,11 +179,6 @@
       width: 24px;
       height: 11px;
     }
-
-    &:hover::before,
-    &:focus::before {
-      height: 12px;
-    }
   }
 
   .programs__title {
@@ -192,7 +190,7 @@
   }
 
   .programs__description {
-    margin: 25px 0 55px 0;
+    margin: 26px 0 55px 0;
     padding: 0;
 
     font-family: $font-arial;
@@ -252,15 +250,15 @@
   }
 
   .programs__title {
-    padding-left: 164px;
+    padding-left: 163px;
 
     font-size: 36px;
     line-height: 1.03;
   }
 
   .programs__description {
-    margin: 75px 0 6px 0;
-    padding-bottom: 24px;
+    margin: 75px 0 0;
+    padding-bottom: 30px;
   }
 
   .programs__link {

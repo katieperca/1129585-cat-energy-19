@@ -102,12 +102,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    margin-left: 34px;
+    width: 500px;
+  }
+
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    min-width: 440px;
+    padding: 12px 0 11px;
   }
 
   .main-nav__toggle {
@@ -116,7 +121,12 @@
 
   .main-nav__item {
     margin: 0;
+    margin-left: 35px;
     border: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &--active,
     &--active-inner {
@@ -155,8 +165,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    width: 525px;
+  }
+
   .main-nav__list {
-    min-width: 477px;
+    width: 525px;
   }
 
   .main-nav__item {

@@ -5,7 +5,7 @@
 .page-footer__logo-wrapper {
   display: flex;
   justify-content: center;
-  padding: 41px 0 29px 0;
+  padding: 38px 0 29px 0;
 }
 
 .page-footer__logo {
@@ -27,9 +27,9 @@
   }
 
   .page-footer__logo-wrapper {
-    padding: 0;
+    padding: 14px 2px 9px;
     margin: 0;
-    margin-right: 54px;
+    margin-right: 50px;
   }
 
   .page-footer__social {
@@ -39,7 +39,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__bottom-part-wrapper {
-    padding: 50px 0 46px 0;
+    padding: 56px 0 46px;
   }
 
   .page-footer__logo-wrapper {

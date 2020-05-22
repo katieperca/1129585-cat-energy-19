@@ -2,14 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
+  padding-top: 20px;
   padding-bottom: 12px;
   margin: 0 auto;
   max-width: $mobile-width;
 }
 
-.copyright__link--text {
-  padding: 10px 0;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  padding-top: 10px;
 
   font-family: $font-arial;
   color: #444444;
@@ -17,25 +27,16 @@
   line-height: 1;
 }
 
-.copyright__link--logo {
-  text-align: right;
-  width: 33px;
-  height: 54px;
-}
-
 .copyright__icon {
   width: 40px;
-  height: 56px;
+  height: 40px;
+  margin-right: -6px;
 
   fill: #666666;
 
   &:hover,
   &:focus {
     fill: #68b738;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
@@ -45,7 +46,7 @@
     padding: 0;
   }
 
-  .copyright__link--text {
-    margin-right: 15px;
+  .copyright__text {
+    margin-right: 12px;
   }
 }
