@@ -52,11 +52,11 @@
             <ul class="form__list form__list--input-data">
               <li class="form__item">
                 <label class="form__label" for="form-name">Имя:*</label>
-                <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" placeholder="Барсик">
+                <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Барсик">
               </li>
               <li class="form__item">
                 <label class="form__label" for="form-weight">Вес (кг):*</label>
-                <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" placeholder="7">
+                <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" pattern="^[ 0-9]+$" placeholder="7">
               </li>
               <li class="form__item">
                 <label class="form__label" for="form-age">Возраст (лет):</label>
@@ -88,7 +88,7 @@
                 </li>
                 <li class="form__item form__item--contacts">
                   <label class="form__label" for="form-number">Телефон:*</label>
-                  <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+                  <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" pattern="[0-9]{11,}" placeholder="8 (960) 900-60-90">
                 </li>
               </ul>
             </div>
@@ -148,7 +148,7 @@
         <div class="container">
           <div class="page-footer__bottom-part-wrapper">
             <div class="page-footer__logo-wrapper">
-              <a class="page-footer__logo footer-logo">
+              <a class="page-footer__logo footer-logo" href="index.html">
                 <img class="page-footer__logo-image footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина Cat energy">
               </a>
             </div>
@@ -161,13 +161,13 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social_link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Instagram</span>
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Instagram</span>
                     <svg class="social__icon social__icon--ig" width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social_link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span>
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span>
                     <svg class="social__icon social__icon--fb" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use>
                     </svg>
                   </a>
@@ -176,7 +176,7 @@
             </div>
             <div class="page-footer__copyright copyright">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <span class="copyright__link--text">HTML Academy</span>
+                <span class="copyright__text">HTML Academy</span>
                 <svg class="copyright__icon" width="27" height="34"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
                 </svg>
               </a>
