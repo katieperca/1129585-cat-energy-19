@@ -1,6 +1,5 @@
 .promo {
-  background-color: #63a73a;
-  height: 305px;
+  background-image: linear-gradient(to bottom, #63a73a 63.6%, #ffffff 63.6%);
 }
 
 .promo__wrapper {
@@ -52,12 +51,8 @@
 .promo__picture {
   width: 280px;
   height: 270px;
-  margin-top: -140px;
-  margin-bottom: 2px;
-}
-
-.promo__selection-button {
-  margin: 3px 0 22px 0;
+  margin-top: -138px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -147,7 +142,7 @@
     width: 245px;
     margin: 0;
     margin-left: 80px;
-    margin-top: -185px;
+    margin-top: -184px;
 
     font-size: 20px;
   }
