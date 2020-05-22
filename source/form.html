@@ -52,11 +52,11 @@
             <ul class="form__list form__list--input-data">
               <li class="form__item">
                 <label class="form__label" for="form-name">Имя:*</label>
-                <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Барсик">
+                <input class="form__input form__input--name-field" id="form-name" type="text" name="surname" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Барсик" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="form-weight">Вес (кг):*</label>
-                <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" pattern="^[ 0-9]+$" placeholder="7">
+                <input class="form__input form__input--weight-field" id="form-weight" type="text" name="weight" pattern="^[ 0-9]+$" placeholder="7" required>
               </li>
               <li class="form__item">
                 <label class="form__label" for="form-age">Возраст (лет):</label>
@@ -84,11 +84,11 @@
               <ul class="form__list form__list--contacts">
                 <li class="form__item form__item--contacts">
                   <label class="form__label" for="form-email">E-mail:*</label>
-                  <input class="form__input form__input--email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                  <input class="form__input form__input--email" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
                 </li>
                 <li class="form__item form__item--contacts">
                   <label class="form__label" for="form-number">Телефон:*</label>
-                  <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" pattern="[0-9]{11,}" placeholder="8 (960) 900-60-90">
+                  <input class="form__input form__input--number" id="form-number" type="tel" name="telephone" pattern="[0-9]{11,}" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
             </div>
